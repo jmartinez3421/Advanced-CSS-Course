@@ -1,3 +1,17 @@
+/*
+    0 - 600  -->  Phone
+    600 - 900  -->  Tablet
+    900 - 1200 -->  Tablet Landscape
+    [1200 - 1800] -->  the styles that we have wrote
+    1800+  -->  Big desktop
+*/
+/*
+    $breakpoint argument choices:
+        - phone
+        - tab-port
+        - tab-land
+        - big-desktop
+*/
 *, *::after, *::before {
   margin: 0;
   padding: 0;
@@ -5,6 +19,9 @@
 
 html {
   font-size: 62.5%; }
+  @media (max-width: 600px) {
+    html {
+      font-size: 50%; } }
 
 body {
   box-sizing: border-box; }
