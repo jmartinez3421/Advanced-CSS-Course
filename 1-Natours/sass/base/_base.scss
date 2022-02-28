@@ -5,11 +5,24 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 62.5%;  //1rem = 10px
     //La fuente por defecto del navegador es 16px, define lo que es un rem
+    
+    @include respond(tab-land){
+        font-size: 56.25%;  //1rem = 9px
+    }
 
-    @include respond-phone {
-        font-size: 50%;
+    @include respond(tab-port){
+        font-size: 50%; //1rem = 8px
+    }
+
+    @include respond(phone){
+        font-size: 40%;
+    }
+
+
+    @include respond(big-desktop){
+        font-size: 75%; //1rem = 12px
     }
 }
 
