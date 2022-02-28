@@ -24,7 +24,12 @@
         z-index: 200;
         cursor: pointer;
         text-align: center;
-        
+
+        @include respond(tab-port){
+            top: 2rem;
+            right: 2rem;
+        }
+
         &:hover{
             box-shadow: 0 1rem 3rem rgba($color-black, .5);
         }
@@ -41,6 +46,11 @@
         z-index: 100;
         
         transition: transform .8s cubic-bezier(0.83, 0, 0.17, 1);
+        
+        @include respond(tab-port){
+            top: 2rem;
+            right: 2rem;
+        }
     }
 
     &__nav{

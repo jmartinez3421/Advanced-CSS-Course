@@ -16,11 +16,6 @@ html{
         font-size: 50%; //1rem = 8px
     }
 
-    @include respond(phone){
-        font-size: 40%;
-    }
-
-
     @include respond(big-desktop){
         font-size: 75%; //1rem = 12px
     }
@@ -28,4 +23,9 @@ html{
 
 body {
     box-sizing: border-box;
+    padding: 2rem;
+
+    @include respond(tab-port){
+        padding: 0;
+    }
 }
