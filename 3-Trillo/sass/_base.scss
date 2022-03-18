@@ -1,3 +1,4 @@
+
 :root{ //All the variables go here
 
     --color-primary: #eb2f64;
@@ -34,6 +35,10 @@
 html{
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px
+
+    @include respond(big){
+        font-size: 50%;
+    }
 }
 
 body{
