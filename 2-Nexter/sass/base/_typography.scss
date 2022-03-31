@@ -46,8 +46,8 @@
 
     &:hover{
         background-color: $color-primary-dark;
-        box-shadow: 0 .5rem 1.5rem rgba(black, .4);
-        transform: translateY(-.2rem);
+        box-shadow: 0 .5rem 1.5rem rgba(black, .2);
+        transform: translateY(-.1rem);
     }
 
     &:active, &:focus{
