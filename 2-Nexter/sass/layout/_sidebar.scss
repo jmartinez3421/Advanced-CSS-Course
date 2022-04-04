@@ -3,6 +3,13 @@
     grid-column: sidebar-start / sidebar-end;
     grid-row: 1/ -1;
 
+    @include respond(bg-large){
+        grid-row: 1 / 2;
+        grid-column: 1 / -1;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
     display: flex;
     justify-content: center;
 }
@@ -25,12 +32,16 @@
         width: 4.5rem;
         display: block;
     }
-
-    &::before{
-        transform: translateY(-1.5rem);
-    }
-
-    &::after{
-        transform: translateY(1.3rem);
+    
+    &::before{ transform: translateY(-1.5rem); }
+    
+    &::after{ transform: translateY(1.3rem); }
+    
+    @include respond(bg-large){
+        margin-top: 0;
+        margin-right: 2rem;
+        
+        &::before{ transform: translateY(-1rem); }
+        &::after{ transform: translateY(.8rem); }
     }
 }
